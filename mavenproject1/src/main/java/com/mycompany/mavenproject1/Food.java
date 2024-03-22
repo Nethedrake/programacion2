@@ -1,16 +1,27 @@
 package com.mycompany.mavenproject1;
 
 public class Food {
-    DishType type;
-    String name;
-    int price;
-    int quantity;
+    private DishType type;
+    private String name;
+    private int price;
+    private String ingredents; /* to do */
+    private int quantity;
+
+    public Food(DishType type, String name, int price, String ingredents, int quantity) {
+        this.type = type;
+        this.name = name;
+        this.price = price;
+        this.ingredents = ingredents;
+        this.quantity = quantity;
+    }
     
-    
-    public Food(String name, int id, int quantity, String type){
-    this.name = name;
-    this.price=id;
-    this.quantity= quantity;
-    
+    public DishType getType(){
+    return this.type;
    }
+
+    public String getName() {
+        return name;
+    }
+    
+    
 }

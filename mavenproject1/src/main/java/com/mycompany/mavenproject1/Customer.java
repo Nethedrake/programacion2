@@ -10,9 +10,7 @@ public class Customer {
         this.id = id;
         this.fullname = fullname;
     }
-    
-    
- 
+   
     void SayMenu(){
     }
     
@@ -24,7 +22,7 @@ public class Customer {
     
     public void sellFood(){
     if (this.role != CustomerRole.ADMINISTRATIVE){
-    System.out.println("Usted no tiene ");
+    System.out.println("Usted no tiene permiso para vender");
     return;
     }
     System.out.println("Ya te atiendo wey");
